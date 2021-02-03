@@ -13,3 +13,18 @@ CHECK_EXPIRATION = ON,
 CHECK_POLICY = ON;
 GO
 
+--Ver logins
+SELECT * FROM master.sys.sql_logins
+GO
+
+--Cambiar contraseña
+ALTER LOGIN Marley Lemke WITH PASSWORD = 'v_QEwe9rrC5O';
+GO
+
+--Desactivar login
+ALTER LOGIN Charlotte Reynolds DISABLE;
+GO
+
+--Eliminar login 
+DROP LOGIN Emile Luettgen;
+GO
